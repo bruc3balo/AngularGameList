@@ -1,0 +1,16 @@
+<a routerLink = "/addGame"><b><i> Click to add Game </i></b></a>
+
+<input type="text"
+  [(ngModel)]="filters.keyword"
+  name="keyword"
+  (input) = 'listGames()'
+  >
+
+<div *ngFor = "let game of games">
+    <h3><u>{{game. name}}</u></h3>
+    <p>{{game.description}}</p>
+    <p><i>{{game.created_at}}</i></p>
+
+    <a routerLink = "/editGame/{{game.id}}">Edit</a>
+
+</div>
