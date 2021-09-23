@@ -1,6 +1,6 @@
 {
-  "name": "game-list",
-  "version": "0.0.0",
+  "name": "@game-list/angular",
+  "version": "5.2.0-rc.",
   "scripts": {
     "ng": "ng",
     "heroku-postbuild": "ng build --prod"
